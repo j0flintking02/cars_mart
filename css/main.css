@@ -12,11 +12,6 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-   html {
-    color: #222;
-    font-size: 1em;
-    line-height: 1.4;
-}
 
 /*
  * Remove text-shadow in selection highlight:
@@ -103,7 +98,10 @@ textarea {
    ========================================================================== */
 /* Base Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+*{
+    margin: 0;
+    padding: 0;
+}
 html {
     font-size: 62.5%; }
   body {
@@ -127,14 +125,14 @@ html {
     width: 100%;
     float: left;
     box-sizing: border-box; }
-  
+
   /* For devices larger than 400px */
   @media (min-width: 400px) {
     .container {
       width: 85%;
       padding: 0; }
   }
-  
+
   /* For devices larger than 550px */
   @media (min-width: 550px) {
     .container {
@@ -145,7 +143,7 @@ html {
     .column:first-child,
     .columns:first-child {
       margin-left: 0; }
-  
+
     .one.column,
     .one.columns                    { width: 4.66666666667%; }
     .two.columns                    { width: 13.3333333333%; }
@@ -159,12 +157,12 @@ html {
     .ten.columns                    { width: 82.6666666667%; }
     .eleven.columns                 { width: 91.3333333333%; }
     .twelve.columns                 { width: 100%; margin-left: 0; }
-  
+
     .one-third.column               { width: 30.6666666667%; }
     .two-thirds.column              { width: 65.3333333333%; }
-  
+
     .one-half.column                { width: 48%; }
-  
+
     /* Offsets */
     .offset-by-one.column,
     .offset-by-one.columns          { margin-left: 8.66666666667%; }
@@ -188,29 +186,169 @@ html {
     .offset-by-ten.columns          { margin-left: 86.6666666667%; }
     .offset-by-eleven.column,
     .offset-by-eleven.columns       { margin-left: 95.3333333333%; }
-  
+
     .offset-by-one-third.column,
     .offset-by-one-third.columns    { margin-left: 34.6666666667%; }
     .offset-by-two-thirds.column,
     .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
-  
+
     .offset-by-one-half.column,
     .offset-by-one-half.columns     { margin-left: 52%; }
-  
-  }
+
+}
+.navbar{
+
+    padding-top: 20px;
+}
+
+.list{
+    float: right;
+}
+.brand{
+    font-weight: bolder;
+    padding: 10px 0 0 60px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    float: left;
+}
+.list-element{
+    list-style: none;
+    display: inline;
+    padding: 6rem 6rem 0 6rem;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar a{
+    padding: 10px;
+    color:whitesmoke;
+}
+
+.list-element a:hover{
+    border-radius: 2px;
+    background-color: rgba(34, 34, 34, 0.171);
+}
+
+header{
+    height: 95vh;
+    background-image: url("../img/Ford Mustang.jpg");
+    background-size: cover;
+    background-position: center top;
+
+}
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header_info{
+    position: relative;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header_info-main{
+display: block;
+text-align: center;
+font-size: 60px;
+font-weight: 400;
+}
+.header_info-sub{
+display: block;
+    text-align: center;
+    font-size: 2rem;
+font-weight: 400;
+letter-spacing: 5px;
+}
+
+.wrapper{
+    height: 300px;
+    margin-bottom: 20px;
+}
+.cardCustom {
+    text-decoration: none;
+    color: dimgrey;
+    height: 30rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+.cardCustom:hover{
+    color: #000;
+}
+.cardCustom_side {
+    font-size: 2rem;
+    height: 30rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
 
 
+.card_pic {
+    background-size: cover;
+    height: 200px;
+    width: 342px;
+}
+
+.card_pic-1 {
+    background-image:  url("../img/Ford Mustang.jpg");
+
+}
+.car_details{
+    margin: 16px 0 0 16px;
+}
+.car_details-make{
+    display: block;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+.car_details-model{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.car_details-price{
+    float: right;
+    height: 1rem;
+    text-align: right;
+    padding: 5px 0 25px 32px;
+    color: whitesmoke;
+    background-color: limegreen;
+    clip-path: polygon(100% 0%, 100% 100%, 0% 100%, 20% 0%);
+}
+
+.btn{
+    color: whitesmoke;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 2px;
+    background-color: limegreen;
 
 
-
-
-
-
-
-
-
-
-
+}
+.btn-main{
+    width: 140px;
+    padding: 20px;
+}
+.header_link{
+    margin-top: 10px;
+    position: relative;
+    left: 103px;
+    top: 28px;
+}
+.btn-info{
+    width: 130PX;
+    padding: 10px 0 10px 30px;
+}
+footer{
+    color: whitesmoke;
+    height: 5vh;
+    margin-top: 100px;
+    background-color: #555555;
+}
 
  /* ==========================================================================
    Helper classes
