@@ -196,6 +196,12 @@ html {
     .offset-by-one-half.columns     { margin-left: 52%; }
 
 }
+.users{
+    background-image: url("../img/Ford Mustang.jpg");
+    background-size: cover;
+    background-position: top;
+}
+
 .navbar{
 
     padding-top: 20px;
@@ -348,6 +354,39 @@ footer{
     height: 5vh;
     margin-top: 100px;
     background-color: #555555;
+}
+
+.user-form{
+
+}
+.form-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30vw;
+    padding: 10vh;
+    background-color: #fff;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+}
+
+.form-box input{
+    width: 100%;
+    border: 1px solid #999999;
+    line-height: 24px;
+    margin: 0 0 30px;
+    padding: 8px 10px;
+}
+
+label[for] {
+    cursor: pointer;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
  /* ==========================================================================
