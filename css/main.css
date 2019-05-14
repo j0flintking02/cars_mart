@@ -517,6 +517,22 @@ label {
     text-decoration: none;
     cursor: pointer;
 }
+.order{
+    padding: 10vh 0 0 0;
+}
+table, td, th {
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+}
  /* ==========================================================================
    Helper classes
    ========================================================================== */
