@@ -389,6 +389,30 @@ label {
     line-height: 1.6;
 }
 
+/*description page*/
+.wrapper{
+
+}
+.car-model{
+    position: relative;
+    left: 0;
+    top: 119px;
+    margin: 20px;
+    background-color: #fff;
+    background-position: center top;
+    background-size: cover;
+    border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem;
+    height: 50rem;
+}
+.car-model .car_details li{
+    list-style: none;
+    padding: 5px;
+    border-bottom: 1px solid gray;
+}
+.car-model .car_details ul{
+    padding-bottom: 20px;
+}
  /* ==========================================================================
    Helper classes
    ========================================================================== */
