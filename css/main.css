@@ -110,6 +110,13 @@ html {
     font-weight: 400;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #222; }
+  a{
+      text-decoration: none;
+      color: gray;
+  }
+  .report:hover{
+      color: darkred;
+  }
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -332,24 +339,33 @@ letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
     border-radius: 2px;
-    background-color: limegreen;
-
-
+    cursor: pointer;
 }
 .btn-main{
     width: 140px;
     padding: 20px;
+    background-color: limegreen;
 }
+
+.btn-info{
+    width: 130PX;
+    padding: 10px 0 10px 30px;
+    background-color: limegreen;
+}
+
+.btn-report{
+    width: 130PX;
+    padding: 10px 0 10px 30px;
+    background-color: red;
+}
+
 .header_link{
     margin-top: 10px;
     position: relative;
     left: 103px;
     top: 28px;
 }
-.btn-info{
-    width: 130PX;
-    padding: 10px 0 10px 30px;
-}
+
 footer{
     color: whitesmoke;
     height: 5vh;
@@ -450,6 +466,44 @@ label {
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
  /* ==========================================================================
    Helper classes
