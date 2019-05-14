@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Auto mart</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header class="user_header">
+    <nav class="navbar">
+        <div class="brand"><a href="index.html">Auto mart</a></div>
+        <ul class="list">
+            <li class="list-element"><a href="#">Home</a></li>
+            <li class="list-element"><a href="#">Inventory</a></li>
+            <li class="list-element"><a href="#">Pricing</a></li>
+            <li class="list-element"><a href="#">Blog</a></li>
+            <li class="list-element"><a href="#">Dealings</a></li>
+        </ul>
+    </nav>
+</header>
+<h1 align="center">user account</h1>
+<section class="account ten columns">
+    <div class="user-model">
+        <!-- Tab links -->
+        <div class="tab">
+            <button class="tablinks" onclick="openCity(event, 'view_cars')">Cars</button>
+            <button class="tablinks" onclick="openCity(event, 'add_car')">Add cars</button>
+            <button class="tablinks" onclick="openCity(event, 'update')">Tokyo</button>
+        </div>
+        <!-- Tab content -->
+        <div id="view_cars" class="tabcontent">
+            <h3>Cars</h3>
+            <section class="section-cars">
+                <div class="wrapper">
+                    <div class="three columns">
+                            <div class="cardCustom_side">
+                                <img src="img/cars/lamborghini1.png" class="responsive" alt="">
+                                <div class="car_details">
+                                    <span class="car_details-make">lamborghini <span class="car_details-price">$30000</span></span>
+                                    <span class="car_details-model">Gerardo</span>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="three columns">
+                        <div class="cardCustom_side">
+                            <img src="img/cars/lamborghini1.png" class="responsive" alt="">
+                            <div class="car_details">
+                                <span class="car_details-make">lamborghini <span class="car_details-price">$30000</span></span>
+                                <span class="car_details-model">Gerardo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three columns">
+                        <div class="cardCustom_side">
+                            <img src="img/cars/lamborghini1.png" class="responsive" alt="">
+                            <div class="car_details">
+                                <span class="car_details-make">lamborghini <span class="car_details-price">$30000</span></span>
+                                <span class="car_details-model">Gerardo</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="three columns">
+                        <div class="cardCustom_side">
+                            <img src="img/cars/lamborghini1.png" class="responsive" alt="">
+                            <div class="car_details">
+                                <span class="car_details-make">lamborghini <span class="car_details-price">$30000</span></span>
+                                <span class="car_details-model">Gerardo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="add_car" class="tabcontent">
+            <div class="form-box">
+                <h1 align="center">Add car</h1>
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="model">Model</label>
+                        <input type="text" name="fName" id="model" placeholder="Ford">
+                    </div>
+                    <div class="form-group">
+                        <label for="make">Make</label>
+                        <input type="text" name="lName" id="make" placeholder="mustang">
+                    </div>
+                    <div class="form-group">
+                        <label for="color">color</label>
+                        <input type="text" name="lName" id="color" placeholder="white">
+                    </div>
+                    <div class="form-group">
+                        <label for="capacity">Capacity</label>
+                        <input type="number" name="capacity" id="capacity" placeholder="4">
+                    </div>
+                    <div class="form-group">
+                        <label for="price">price</label>
+                        <input type="number" name="price" id="price" placeholder="$30000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea name="description" id="description" cols="30" rows="10"></textarea>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="fileupload"> Select a file to upload</label>
+                        <input type="file" name="fileupload" value="fileupload" id="fileupload">
+                    </div>
+                    <div class="form-group">
+                        <!--<input type="image" src="/img/icons/PNG/plus-circle.png" alt="Submit" width="100">-->
+                        <a href="#" class="btn btn-info offset-by-four columns">Add</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="update" class="tabcontent">
+            <h3>update</h3>
+            <p>Tokyo is the capital of Japan.</p>
+        </div>
+    </div>
+</section>
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
