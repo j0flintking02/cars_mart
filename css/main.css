@@ -358,7 +358,12 @@ letter-spacing: 5px;
     padding: 10px 0 10px 30px;
     background-color: red;
 }
-
+.btn-sold{
+    width: 140PX;
+    margin: 0 0 0 76px;
+    padding: 10px 30px;
+    background-color: darkgrey;
+}
 .header_link{
     margin-top: 10px;
     position: relative;
@@ -432,6 +437,13 @@ label {
 .user_header{
     height: 10vh;
 }
+.sold{
+    background-color: red !important;
+}
+#view_cars .cardCustom_side{
+    height: 32rem;
+}
+
 /* Style the tab */
 .tab {
     overflow: hidden;
