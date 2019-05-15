@@ -19,11 +19,10 @@
     <nav class="navbar">
         <div class="brand"><a href="index.html">Auto mart</a></div>
         <ul class="list">
-            <li class="list-element"><a href="#">Home</a></li>
-            <li class="list-element"><a href="#">Inventory</a></li>
-            <li class="list-element"><a href="#">Pricing</a></li>
-            <li class="list-element"><a href="#">Blog</a></li>
-            <li class="list-element"><a href="#">Dealings</a></li>
+            <li class="list-element"><a href="user.html">Dashboard</a></li>
+            <li class="list-element"><a href="view.html">view Cars</a></li>
+            <li class="list-element"><a href="signup.html">Register</a></li>
+            <li class="list-element"><a href="signin.html">login</a></li>
         </ul>
     </nav>
 </header>
@@ -56,9 +55,26 @@
 
         </tr>
     </table>
-    <h3>price:$30000</h3>
-    <a href="#" class="btn btn-info offset-by-three columns">update</a>
-    <a class="offset-by-four columns" href="user.html">back</a>
+    <h3 id="price">Price:$30000</h3>
+    <a id="offer" class="btn btn-info offset-by-three columns" onclick="makeOrder(this)">Make offer</a>
+    <a href="#" id="offer1" class="btn btn-info offset-by-one columns">Purchase</a>
+    <a class="offset-by-five columns" href="description.html">back</a>
 </div>
+<script>
+    const price = document.getElementById('price');
+    const btn = document.getElementById('offer');
+    const btn1 = document.getElementById('offer1');
+    function makeOrder(id){
+        btn1.style.marginLeft ='18vw';
+        btn.style.display = 'none';
+        price.innerHTML = `
+<form action="" method="post">
+<label for="offer">new offer</label><input type="number" name="offer" id="offer">
+<a class="btn btn-submit" type="submit">send</a>
+</form>
+`
+    }
+
+</script>
 </body>
 </html>
