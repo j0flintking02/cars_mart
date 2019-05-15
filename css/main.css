@@ -297,7 +297,12 @@ letter-spacing: 5px;
     width: 100%;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
 }
-
+.delete{
+    height: 35rem;
+}
+.delete .car_details{
+    margin: 16px 0 16px 16px;
+}
 
 .card_pic {
     background-size: cover;
